@@ -7,6 +7,7 @@
     , "jade": ">= 0.0.1"
 		}
 	, "devDependencies": {
-			"soda": ">= 0.0.0"
+			"soda": "latest"
+		,	"vows": "latest"
 	}
 }
