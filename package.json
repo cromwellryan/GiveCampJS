@@ -9,5 +9,6 @@
 	, "devDependencies": {
 			"soda": "latest"
 		,	"vows": "latest"
+		,	"jellyfish": "latest"
 	}
 }
