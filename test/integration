@@ -6,23 +6,21 @@ var browser = soda.createClient({
 	, browser: 'firefox'
 });
 
-var vows = require('vows')
-	, assert = require('assert');
 
-vows.describe('HomePage').addBatch( {
-	'Charity News': {
+	var assert = require('assert');
+exports.testsStringLength = function(){
+    assert.equal(6, 'foobar'.length);
+};
 
-		'is present': function() {
+exports.homepagehascharitynews = function() {
 			browser
 				.chain
 				.session()
 				.open('/')
 				.waitForPageToLoad(5000)
 				.waitForElementPresent( 'css=p#charitynews' )
-				.assertElementPresent( 'css=p.charitynews' )
+				.assertElementPresent('css=p#charitynews')
 				.testComplete()
 				.end( function(err) { if(err) throw err; } );
-		}
-	}
-}).export(module);
+		};
 
