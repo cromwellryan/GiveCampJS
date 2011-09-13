@@ -8,7 +8,5 @@
 		}
 	, "devDependencies": {
 			"soda": "latest"
-		,	"jellyfish": "latest"
-		, "expresso": "latest"
 	}
 }

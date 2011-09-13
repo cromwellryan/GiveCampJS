@@ -8,10 +8,6 @@ var browser = soda.createClient({
 
 
 	var assert = require('assert');
-exports.testsStringLength = function(){
-    assert.equal(6, 'foobar'.length);
-};
-
 exports.homepagehascharitynews = function() {
 			browser
 				.chain
